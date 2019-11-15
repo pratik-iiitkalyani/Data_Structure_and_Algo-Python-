@@ -9,12 +9,6 @@ for i in l:
     new_list.sort()
 print(new_list)
     
-# using list compreshension
-li = [int(i) for i in l]
-li.sort()
-print(li)
-
-# lambda exp
-x = lambda l: l
-print(x(l))
+# using lambda
+print(sorted(l, key=lambda i: int(i)))
     
