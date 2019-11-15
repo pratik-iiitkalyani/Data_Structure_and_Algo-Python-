@@ -1,4 +1,4 @@
-# sort by key of Dictionary in list of Dic
+# sort by value of Dictionary in list of Dic
 
 l = [
     {
