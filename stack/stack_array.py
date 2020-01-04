@@ -16,6 +16,5 @@ stack = isCreate()
 push(stack, str(10)) 
 push(stack, str(20)) 
 push(stack, str(30)) 
-print(top(stack))
-print(stack) 
+print(top(stack)) 
 
