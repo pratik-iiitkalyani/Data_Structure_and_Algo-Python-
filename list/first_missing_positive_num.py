@@ -15,7 +15,8 @@ def missing_positive_num(list):
 
 l = [-8,0,10,1]
 l1 = [-1, 2, 3, 1, 4]
-print(missing_positive_num(l1))
+l2 = [-3, -4, 4, 0, 1]
+print(missing_positive_num(l2))
 
 # method-2
 # time complexity - o(n) + o(1)
