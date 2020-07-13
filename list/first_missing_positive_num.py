@@ -16,23 +16,31 @@ def missing_positive_num(list):
 l = [-8,0,10,1]
 l1 = [-1, 2, 3, 1, 4]
 l2 = [-3, -4, 4, 0, 1]
-print(missing_positive_num(l2))
+# print(missing_positive_num(l2))
 
 # method-2
 # time complexity - o(n) + o(1)
 
-# def missing_first_positive_num(list):
-#     for i in range(len(list)):
-#         if list[i] > 0 and list[i] < len(list)+1:
-#             list[list[i]] = list[i]
-#             print(list[i])
-#         else:
-#             continue
-#     print(list)
+def missing_first_positive_num(list):
+    for i in range(1, len(list)):
+        print(i)
+        if list[i] > 0 and list[i] < len(list)+1:
+            print(i)
+            print(list)
+            list[i], list[list[i]] = list[list[i]], list[i]
+            print(list)
+            if list[i] != i:
+                print(i)
+                print(list)
+                list[i], list[list[i]] = list[list[i]], list[i]
+                print(list)
+        else:
+            continue
+    print(list)
     
-    # i = 1
-    # while(i<len(list)):
-    #     if list[i] != i:
-    #         return i
+    i = 1
+    while(i<len(list)):
+        if list[i] != i:
+            return i
 
-# print(missing_first_positive_num(l1))
+print(missing_first_positive_num(l1))
